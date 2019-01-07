@@ -13,8 +13,9 @@
 
 
 using namespace std;
+using uint = unsigned int;
 
-template<typename T,int N>
+template<typename T,uint N>
 ostream& operator<< (ostream& os, const array<T,N>& target)
 {
 	for (const auto& i : target)
