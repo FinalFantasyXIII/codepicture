@@ -14,10 +14,10 @@ public:
 	void add_node(const std::string&);
 	void del_node(const std::string&);
 private:
-	std::hash<std::string>									hashFn;
-	int																	replicas;
-	std::set<size_t>												nodes;
-	std::unordered_map<size_t, std::string>		data;
+	std::hash<std::string> hashFn;
+	int replicas;
+	std::set<size_t> nodes;
+	std::unordered_map<size_t, std::string> data;
 };
 
 chash::chash(int r) :replicas(r) {}
